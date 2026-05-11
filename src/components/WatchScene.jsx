@@ -183,7 +183,7 @@ const WatchScene = ({ scrollRef }) => {
           2.2,
         )
       }
-    }, scrollRef)
+    })
 
     return () => ctx.revert()
   }, [camera, modelReady, scrollRef])
