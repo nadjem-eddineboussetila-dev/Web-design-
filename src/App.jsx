@@ -44,7 +44,7 @@ function App() {
         gl={{ antialias: true, alpha: true }}
         camera={{ position: [0, 0, 3.8], fov: 32, near: 0.1, far: 100 }}
         onCreated={({ gl }) => {
-          gl.physicallyCorrectLights = true
+          gl.useLegacyLights = false
           gl.toneMappingExposure = 1.15
           gl.outputColorSpace = SRGBColorSpace
         }}
