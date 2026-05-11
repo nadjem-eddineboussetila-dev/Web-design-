@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap');
+
+:root {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', 'Times New Roman', serif;
+  --text-primary: #f4f1ea;
+  --text-secondary: rgba(244, 241, 234, 0.78);
+  --text-muted: rgba(244, 241, 234, 0.5);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color-scheme: dark;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #161a2b 0%, #07070b 45%, #050505 100%);
+  color: var(--text-primary);
+}
+
+h1,
+h2,
+strong {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0 0 16px;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 4vw, 3.8rem);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+}
+
+p {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+}
+
+canvas {
+  display: block;
+}
